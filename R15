@@ -27,7 +27,7 @@ end)
 local Rig = game:GetObjects("rbxassetid://5088298388")[1]
 Rig.Parent = Character
 Rig.HumanoidRootPart.CFrame = Character.HumanoidRootPart.CFrame
-Rig.Name = "DexReAnim"
+Rig.Name = "Reanimated"
 
 for i,v in next, Character.Humanoid:GetPlayingAnimationTracks() do
 v:Stop()
@@ -58,13 +58,13 @@ part.AlignPosition.Attachment1 = parent["n"..part.Name]
 part.AlignOrientation.Attachment1 = parent["n"..part.Name]
 parent["n"..part.Name].Position = p or Vector3.new()
 part["n"..part.Name].Orientation = r or Vector3.new()
-part.AlignPosition.MaxForce = 999999999
+part.AlignPosition.MaxForce = math.huge
 part.AlignPosition.MaxVelocity = math.huge
 part.AlignPosition.ReactionForceEnabled = false
 part.AlignPosition.Responsiveness = math.huge
 part.AlignOrientation.Responsiveness = math.huge
 part.AlignPosition.RigidityEnabled = false
-part.AlignOrientation.MaxTorque = 999999999
+part.AlignOrientation.MaxTorque = math.huge
 end
 
 create(Character.UpperTorso,Rig['Torso'],Vector3.new(0,0.3,0))
