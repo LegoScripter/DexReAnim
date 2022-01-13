@@ -16,7 +16,7 @@ local ct = {}
 
 char.Archivable = true
 local reanim = char:Clone()
-reanim.Name = 'Dex Ware '..plr.Name..''
+reanim.Name = 'Reanim: '..plr.Name..''
 reanim.Parent = workspace
 char.HumanoidRootPart:Destroy()
 
@@ -38,13 +38,13 @@ part.AlignPosition.Attachment1 = parent[part.Name]
 part.AlignOrientation.Attachment1 = parent[part.Name]
 parent[part.Name].Position = p or Vector3.new()
 part[part.Name].Orientation = r or Vector3.new()
-part.AlignPosition.MaxForce = 999999999
+part.AlignPosition.MaxForce = math.huge
 part.AlignPosition.MaxVelocity = math.huge
 part.AlignPosition.ReactionForceEnabled = false
 part.AlignPosition.Responsiveness = math.huge
 part.AlignOrientation.Responsiveness = math.huge
 part.AlignPosition.RigidityEnabled = false
-part.AlignOrientation.MaxTorque = 999999999
+part.AlignOrientation.MaxTorque = math.huge
 end
 
 for i,v in next, char:GetDescendants() do
