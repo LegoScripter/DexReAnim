@@ -16,7 +16,7 @@ local ct = {}
 
 char.Archivable = true
 local reanim = char:Clone()
-reanim.Name = 'Reanim: '..plr.Name..''
+reanim.Name = 'R: '..plr.Name
 reanim.Parent = workspace
 char.HumanoidRootPart:Destroy()
 
