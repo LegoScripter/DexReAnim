@@ -28,6 +28,7 @@ local Rig = game:GetObjects("rbxassetid://5088298388")[1]
 Rig.Parent = Character
 Rig.HumanoidRootPart.CFrame = Character.HumanoidRootPart.CFrame
 Rig.Name = "Reanimated"
+Character.Name = "R: "..game.Players.LocalPlayer.Name
 
 for i,v in next, Character.Humanoid:GetPlayingAnimationTracks() do
 v:Stop()
